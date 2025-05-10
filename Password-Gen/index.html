@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Password Gen</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
     <script src="script.js"></script>
   </head>
   <body>
@@ -13,12 +18,15 @@
         <h2>Password <br />Generator</h2>
       </div>
       <div class="textBox">
-        
         <input type="text" id="RandomPass" placeholder="Your Password" />
         <button onclick="genPassword()">Generate Password</button>
       </div>
       <div class="images">
-        <img src="/img/copy logo.png" onclick="copyPassword()" id="Copy" />
+        <i
+          class="fas fa-copy"
+          onclick="copyPassword()"
+          title="Copy Password"
+        ></i>
       </div>
     </div>
   </body>
