@@ -1,63 +1,78 @@
-@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 * {
   margin: 0;
   padding: 0;
-  font-family: "Handlee", cursive;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
+
 body {
-  background: #2f363e;
-}
-.text {
-  position: relative;
-  width: 550px;
-  height: 200px;
-}
-h2 {
-  position: absolute;
-  left: 629px;
-  bottom: -40px;
-  font-weight: 700;
-  font-family: "Handlee", cursive;
-  color: #fff;
-  font-size: 3.3em;
-}
-.textBox {
-  position: absolute;
-  top: 261px;
-  left: 489px;
-  width: 500px;
-  height: 35px;
-  border-radius: 10px;
-  padding: 20px 10px;
-  background: #fff;
-  box-shadow: 15px 25px 75px rgba(0, 0, 0, 0.25),
-    10px 10px 70px rgba(0, 0, 0, 0.25), inset 5px 5px 10px rgba(0, 0, 0, 0.5),
-    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
-    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
-}
-.textBox input {
-  font-size: 25px;
-  border: 0;
-  outline: 0;
-  -webkit-text-fill-color: blue;
-}
-.images img {
-  width: 55px;
-  position: absolute;
-  left: 1030px;
-  top: 270px;
-  cursor: pointer;
-}
-.textBox button {
-  position: absolute;
-  left: 1px;
-  top: 90px;
-  border: 0;
-  outline: 0;
-  font-size: 32px;
+  height: 100vh;
+  display: flex;
   justify-content: center;
-  padding: 17px;
+  align-items: center;
+  background: linear-gradient(135deg, #2f3542, #57606f);
+  color: #fff;
+}
+
+.container {
+  background: #1e272e;
+  padding: 40px;
   border-radius: 15px;
-  background-color: aqua;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.textBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.textBox input {
+  font-size: 20px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #f1f2f6;
+  color: #2f3542;
+  text-align: center;
+}
+
+.textBox button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  background-color: #1dd1a1;
+  color: white;
   cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.textBox button:hover {
+  background-color: #10ac84;
+}
+
+.images {
+  margin-top: 15px;
+}
+
+.images i {
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.images i:hover {
+  color: #1dd1a1;
 }
